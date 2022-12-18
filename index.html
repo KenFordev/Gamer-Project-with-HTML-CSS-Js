@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/51e6440cb1.js" crossorigin="anonymous"></script>
+    <title>3D Game Dev</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header__con">
+                <div class="nav__con">
+                    <div class="nav__logo">
+                        <a href="#">Game</a> 
+                    </div>
+                    <ul class="nav__menu" id="nav__menu-on">
+                        <li><a class="menu-item" href="#">Home</a></li>
+                        <li><a class="menu-item" href="#">About us</a></li>
+                        <li><a class="menu-item" href="#">Portfolio</a></li>
+                        <li><a class="menu-item" href="#">News</a></li>
+                        <li><a class="menu-item" href="#">Contact Us</a></li> 
+                    </ul>
+                    <div class="hamburger__menu" id="ham__js">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+
+                <div class="content__con">
+                    <div class="content__left">
+                        <h2>3D game Dev</h2>
+                        <h1>Work that we <br>produce for our<br> clients</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <div class="content__left-btn">
+                            <a href="#">Get more details</a>
+                        </div>
+                    </div>
+
+                    <div class="content__right">
+                        <div class="unity">
+                            <img src="/image/img1.svg" alt="">
+                        </div>
+                        <div class="unreal">
+                            <img src="/image/img2.svg" alt="">
+                        </div>
+                        <div class="eye">
+                            <img src="/image/img3.svg" alt="">
+                        </div>
+                        <div class="joy">
+                            <img src="/image/joy.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Header END ==================================== -->
+    <div class="img__bg">
+        <div class="container">
+            <div class="img__con">
+                <div class="text__top">
+                    <h2>Currently Trending Games</h2>
+                    <a href="#">See all</a>
+                </div>
+
+                <div class="img__bottom">
+                    <div class="img__bot-item">
+                        <div class="img__bot-content">
+                            <img class="image__items" onclick="openModal(), currentbox(1)" src="/image/Rectangle 23.svg" alt="">
+                        </div>
+                        <div class="bottom__text">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <h2>40 Followers</h2>
+                        </div>
+                    </div>
+                    <div class="img__bot-item">
+                        <div class="img__bot-content">
+                            <img class="image__items" onclick="openModal(), currentbox(2)" src="/image/Rectangle 24.png" alt="">
+                        </div>
+                        <div class="bottom__text">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <h2>40 Followers</h2>
+                        </div>
+                    </div>
+                    <div class="img__bot-item">
+                        <div class="img__bot-content">
+                            <img class="image__items" onclick="openModal(), currentbox(3)" src="/image/Rectangle 25.svg" alt="">
+                        </div>
+                        <div class="bottom__text">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <h2>40 Followers</h2>
+                        </div>
+                    </div>
+                    <div class="img__bot-item">
+                        <div class="img__bot-content">
+                            <img class="image__items" onclick="openModal(), currentbox(4)" src="/image/Rectangle 26.svg" alt="">
+                        </div>
+                        <div class="bottom__text">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <h2>40 Followers</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Image END ==================================== -->
+    <div class="modal" id="mymodal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        
+        <div class="modal__content">
+            
+            <div class="myslides">
+                <img src="/image/Rectangle 23.svg" alt="">
+            </div>
+            <div class="myslides">
+                <img src="/image/Rectangle 24.png" alt="">
+            </div>
+            <div class="myslides">
+                <img src="/image/Rectangle 25.svg" alt="">
+            </div>
+            <div class="myslides">
+                <img src="/image/Rectangle 26.svg" alt="">
+            </div>
+            
+            <!-- next/previous controls -->
+            <a class="prev" onclick="controlButton(-1)">&#10094</a>
+            <a class="next" onclick="controlButton(1)">&#10095</a>
+            
+            <!-- thumbnail image controls -->
+            <div class="thumb__container">
+                
+                <div class="thumb__item">
+                    <img class="demo" onclick="currentbox(1)" src="/image/Rectangle 23.svg" alt="">
+                </div>
+                <div class="thumb__item">
+                    <img class="demo" onclick="currentbox(2)" src="/image/Rectangle 24.png" alt="">
+                </div>
+                <div class="thumb__item">
+                    <img class="demo" onclick="currentbox(3)" src="/image/Rectangle 25.svg" alt="">
+                </div>
+                <div class="thumb__item">
+                    <img class="demo" onclick="currentbox(4)" src="/image/Rectangle 26.svg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- =============================== The Modal/Lightbox END ==================================== -->
+    <section class="lorem">
+        <div class="container">
+            <div class="lorem__con">
+                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+            </div>
+        </div>
+    </section>
+    <!-- =============================== Lorem END ==================================== -->
+    <div class="spiderman">
+        <div class="container">
+            <div class="spider__con">
+                <div class="spider__lorem">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <div class="spider__img">
+                    <img id="myImg__spider" src="/image/spider.svg" alt="
+                    Spider-Man was a radical departure from the established conventions of the comic-book superhero: he was a teenage character who was not relegated to sidekick status beside an older, more-experienced hero. In addition to enhanced speed and strength, Parker also possessed a precognitive “spider sense” that alerted him to approaching dangers. Using his inborn scientific talents, Parker synthesized a unique adhesive “web fluid” and built a pair of wrist-mounted web-shooters that enabled him to shape the webbing into various useful forms. He also designed and sewed the web-festooned red-and-blue costume that quickly became Spider-Man’s most visible trademark.">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Spiderman zoom ==================================== -->
+    <div id="mymodal__spider" class="modal__spider">
+        <span class="close__spider">
+            &times;
+        </span>
+        <img class="spider__content" id="spider01" src="/image/spider.svg" alt="TheSpiderman">
+        <div id="caption"></div>
+    </div>
+
+
+
+    <!-- =============================== Spiderman zoom END==================================== -->
+    <!-- =============================== Spiderman END ==================================== -->
+    <div class="game__bg">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="game__con">
+                <div class="game__header">
+                    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <div class="game__bottom">
+                    <!-- ============= 1 ================ -->
+                    <div class="game__item">
+                        <div class="bg-item"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <p>Mobile Game Development</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!-- ============= 2 ================ -->
+                    <div class="game__item">
+                        <div class="bg-item"><i class="fa-solid fa-computer"></i></div>
+                        <p>PC Game Development</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!-- ============= 3 ================ -->
+                    <div class="game__item">
+                        <div class="bg-item"><i class="fa-brands fa-playstation"></i></div>
+                        <p>PS4 Game Development</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!-- ============= 4 ================ -->
+                    <div class="game__item">
+                        <div class="bg-item"><i class="fa-solid fa-vr-cardboard"></i></div>
+                        <p>AR/VR Solutions</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="game__bottom-last">
+                    <!-- ============= 5 ================ -->
+                    <div class="game__bottom-item">
+                        <div class="bg-item"><i class="fa-regular fa-object-group"></i></div>
+                        <p>AR/VR design</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!-- ============= 6 ================ -->
+                    <div class="game__bottom-item">
+                        <div class="bg-item"><i class="fa-brands fa-unity"></i></div>
+                        <p>3D Modelings</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Game END ==================================== -->
+    <div class="project__bg">
+        <div class="container">
+            <div class="pro__con">
+                <div class="pro__header">
+                    <h2>Our Recent Project</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                <div class="pro__pic-top">
+                    <div class="pro__pic-item">
+                        <img src="/image/pro1.png" alt="">
+                    </div>
+                    <div class="pro__pic-item">
+                        <img src="/image/pro2.png" alt="">
+                    </div>
+                    <div class="pro__pic-item">
+                        <img src="/image/pro3.png" alt="">
+                    </div>
+                    <div class="pro__pic-item">
+                        <img src="/image/pro4.png" alt="">
+                    </div>
+                    <div class="pro__pic-item">
+                        <img src="/image/pro5.png" alt="">
+                    </div>
+                    <div class="pro__pic-item">
+                        <img src="/image/pro6.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="btn__project">
+                <a href="#">See all</a>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Project END ==================================== -->
+    <div class="email__bg">
+        <div class="container">
+            <div class="email__con">
+                <div class="email__top">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                <div class="email__bottom">
+                    <div class="email__flex">
+                        <div class="email__item">
+                            <h2>Stay in the loop</h2>
+                            <p>Subscribe to receive the latest news and updates about TDA.
+                            We promise not to spam you! </p>
+                        </div>
+                        <div class="email__item-bottom">
+                            <div class="bottom-item">
+                                <input type="email" placeholder="Enter amil address">
+                                <a href="#">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Email END ==================================== -->
+    <footer class="foot__bg">
+        <div class="container">
+            <div class="foot__con">
+                <div class="foot__grid">
+                    <div class="foot__logo">
+                        <h2>LOGO</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <p class="bott__line">@Logo</p>
+                    </div>
+                    <div class="foot__about">
+                        <h3>About us</h3>
+                        <ul>
+                            <li>Zeux</li>
+                            <li>Portfolio</li>
+                            <li>Careers</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="foot__contact">
+                        <h3>Contect us</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <p>+908 89097 890</p>
+                    </div>
+                    <div class="foot__icon">
+                        <div class="icon__item">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon__item">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="icon__item">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="icon__item">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =============================== Footer END ==================================== -->
+    <footer class="copyright__bg">
+        <div class="container">
+            <div class="copy__con">
+                <h3>Copyright &reg; 2021 Lorem All rights Rcerved</h3>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1000 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    /* border: 1px solid #fff; */
+}
+.header {
+    height: auto;
+    background-color: #000;
+}
+.nav__con {
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo {
+    margin-left: 55px;
+    text-align: center;
+}
+.nav__logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav__menu {
+    display: flex;
+    margin-right: 55px;
+    justify-content: center;
+    align-items: center;
+}
+.nav__menu li{
+    margin-left: 2rem;
+    list-style-type: none;
+}
+.nav__menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: .4s ease;
+}
+.active-menu {
+    background-color: #FA9021;
+}
+.nav__menu li a:hover {
+    background-color: #FA9021;
+}
+/* ====================== hamburger menu ====================== */
+.hamburger__menu {
+    margin-right: 1rem;
+    cursor: pointer;
+    display: none;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+/* ====================== hamburger menu ====================== */
+.content__con {
+    /* border: 1px solid red;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0;
+}
+.content__left {
+    color: #fff;
+    margin-left: 7rem;
+    text-align: left;
+    padding: 1rem;
+}
+.content__left h2 {
+    color: #E87D0E;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.content__left h1 {
+    font-size: 3em;
+} 
+.content__left p {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+.content__left-btn {
+    margin-top: 2rem;
+}
+.content__left-btn a {
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #E87D0E;
+    border: 1px solid transparent;
+    transition: .4s ease;
+    font-weight: 500;
+}
+.content__left-btn a:hover {
+    background-color: transparent;
+    border: 1px solid #E87D0E;
+    color: #E87D0E;
+}
+.content__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.unity,
+.eye,
+.unreal {
+    position: absolute;
+}
+.unity {
+    left: .6rem;
+}
+.eye img,
+.unreal img,
+.unity img {
+    width: 100%;
+}
+.eye {
+    top: .2rem;
+    right: 6rem;
+}
+.unreal {
+    top: 1rem;
+    left: 8rem;
+}
+.content__right .joy {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content__right .joy img {
+    max-width: 100%;
+    width: 300px; 
+}
+.section__foll {
+    background-color: #000;
+    height: auto;
+}
+.foll__con {
+    display: flex;
+    flex-direction: column;
+}
+.foll__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.currently {
+    margin-left: 7rem;
+    padding: 1rem;
+}
+.currently h2 {
+    color: #fff;
+}
+.btn__see-all {
+    margin-right: 6rem;
+}
+.btn__see-all  a {
+    text-decoration: none;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: rgba(44, 43, 43, 0.76);
+    transition: .4s ease;
+}
+.btn__see-all a:hover {
+    background-color: transparent;
+    border: 1px solid rgba(44, 43, 43, 0.76);
+}
+/* ======================================== รอแก้ ================================ */
+.img__bg {
+    background-color: #000;
+    height: auto;
+    overflow: hidden;
+}
+.img__con {
+    margin: 0 5rem;
+    margin-top: 4rem;
+    padding: 3rem;
+}
+.text__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text__top h2 {
+    color: #fff;
+    font-weight: 500;
+}
+.text__top a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color:rgb(241, 57, 57) ;
+    padding: 6px 17px;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: .4s ease;
+    text-align: center;
+}
+.text__top a:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    background-color: rgb(255, 0, 0);
+}
+/* ====================== bottom ===================== */
+.img__bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 3rem auto;
+}
+.image__items {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: .4s ease;
+}
+.image__items:hover {
+    transform: scale(1.1);
+}
+.bottom__text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin: .5rem auto;
+}
+.bottom__text i {
+    color: #fff;
+    font-size: 1.3em;
+}
+.bottom__text h2 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1rem;
+}
+/* ======================================== รอแก้ ================================ */
+/* ======================================== modal lightbox ================================ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .6);
+}
+.modal__content {
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    max-width: 1200px;
+}
+.myslides {
+    display: none;
+    text-align: center;
+}
+.myslides img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.close {
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(255, 6, 6);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .4s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.thumb__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background-color: #000;
+    margin: 1rem 0;
+}
+.demo {
+    opacity: 0.6;
+    transition: .4s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* ======================================== modal lightbox End================================ */
+.lorem {
+    background-color: #000;
+    height: auto;
+    overflow: hidden;
+}
+.lorem__con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 16.6rem;
+}
+.lorem__con h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.spiderman {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(40, 11, 17, 1) 100%);
+    height: auto;
+}
+.spider__con {
+    padding-bottom: 4rem;
+}
+.spider__lorem {
+    color: #fff;
+    margin-left: 7rem;
+    margin-right: 50%;
+    padding: 0 1rem;
+}
+.spider__lorem h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.spider__lorem p {
+    font-size: 16px;
+    font-weight: 100;
+}
+.spider__img {
+    margin-left: 7rem;
+    margin-right: 5rem;
+    padding: 1rem 0;
+}
+.spider__img img{
+    width: 100%;
+    object-fit: center;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 30px;
+    padding: 1rem;
+}
+#myImg__spider {
+    transition: .4s ease;
+    cursor: pointer;
+}
+#myImg__spider:hover {
+    opacity: .7;
+} 
+/* ====================================== spidermen Zoom start!! ========================================== */
+.modal__spider {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .8);
+}
+.spider__content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: auto;
+    text-align: center;
+    color: #ccc;
+    padding: 1rem 0;
+    height: auto; /*รอแก้ตรงนี้ด้วย ห้ามลืมมมมม*/
+    /* border: 1px solid red; */
+}
+.spider__content,#caption {
+    animation-name: zoomin;
+    animation-duration: .6s;
+}
+.zoom-out {
+    animation-name: zoomout;
+    animation-duration: .6s;
+}
+@-webkit-keyframes zoomin {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoomout {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+@keyframes zoomin {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.close__spider {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: .3s ease;
+}
+.close__spider:hover,
+.close__spider:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ====================================== spidermen Zoom end!! ========================================== */
+.game__bg {
+    background-image: url(/image/bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    position: absolute;
+}
+.game__con {
+    position: relative;
+    z-index: 20;
+}
+.game__con .fa-arrow-right {
+    color: #E87D0E;
+    transition: .3s ease;
+}
+.game__con .fa-arrow-right:hover {
+    cursor: pointer;
+    color: #e7ab6c;
+}
+.game__header {
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+    margin: 3rem 9rem;
+    padding: 1rem;
+}
+.game__header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+.game__bottom {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.game__item {
+    text-align: center;
+    width: 100%;
+}
+.game__item .fa-solid, .game__item .fa-brands{
+    font-size: 1rem;
+    color: #E87D0E;
+}
+.game__item .bg-item {
+    background-color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    border-radius: 70%;
+    margin-bottom: .7rem;
+}
+.game__item p {
+    font-size: .6rem;
+    margin-bottom: .7rem;
+}
+.game__bottom-last {
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.game__bottom-item .fa-regular, .game__bottom-item .fa-brands,
+.game__bottom-item .fa-solid {
+    color: #E87D0E;
+    font-size: 1rem;
+}
+.game__bottom-item {
+    text-align: center;
+    padding: 1.3rem;
+}
+.game__bottom-last .bg-item {
+    background-color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    border-radius: 70%;
+    margin-bottom: .7rem;
+}
+.game__bottom-last p {
+    font-size: .6rem;
+    margin-bottom: .7rem;
+}
+.project__bg {
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(28, 3, 3, 1) 100%);
+    height: auto;
+    overflow: hidden;
+}
+.pro__con {
+    margin: 0 6rem;
+}
+.pro__header {
+    text-align: center;
+    color: #fff;
+    margin: 4rem 0;
+    padding: 1rem;
+}
+.pro__pic-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.pro__pic-item img {
+    width: 100%;
+    height: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+/* ========================================== กำลังแก้ไข =============== */
+
+/* ========================================== กำลังแก้ไข =============== */
+.btn__project {
+    margin-right: 6rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.btn__project  a {
+    text-decoration: none;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: rgba(44, 43, 43, 0.76);
+    transition: .4s ease;
+}
+.btn__project a:hover {
+    background-color: transparent;
+    border: 1px solid rgba(44, 43, 43, 0.76);
+}
+.email__bg {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(25, 6, 6, 1) 77%);
+    height: auto;
+    overflow: hidden;
+}
+.email__con {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-bottom: 7rem;
+}
+.email__top {
+    color: #fff;
+    text-align: left;
+}
+.email__top h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.email__top p {
+    padding: .7rem 0;
+}
+.email__bottom {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #1C140F;
+    border-radius: 10px;
+}
+.email__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+}
+.email__item {
+    color: #fff;
+    padding: .4rem;
+}
+.email__item h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.email__item p {
+    margin-bottom: .6rem;
+}
+.bottom-item {
+    width: 300px;
+    position: relative;
+}
+.bottom-item input[type="email"]{
+    padding: .4rem;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+}
+.bottom-item a {
+    position: absolute;
+    display: inline-block;
+    right: 5px;
+    top: 10%;
+    background-color: #E87D0E;
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .4s ease;
+}
+.bottom-item a:hover {
+    background-color: #e4a159;
+}
+.foot__bg {
+    background-color: #000;
+    height: auto;
+    overflow: hidden;
+}
+.foot__con {
+    margin: 2rem 2rem;
+}
+.foot__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
+.foot__logo {
+    text-align: left;
+    color: #fff;
+}
+.foot__logo p:nth-child(2) {
+    margin-top: 1rem;
+}
+.foot__logo p:nth-child(3) {
+    margin-top: .7rem;
+}
+.foot__about {
+    color: #fff;
+    margin-left: 4rem;
+}
+.foot__about h3 {
+    font-weight: 500;
+}
+.foot__about ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: .4rem;
+}
+.foot__about li {
+    list-style: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.foot__about li:hover {
+    text-decoration: underline;
+}
+.foot__contact {
+    color: #fff;
+}
+.foot__contact h3 {
+    font-weight: 500;
+}
+.foot__contact p:nth-child(2) {
+    margin-top: 1rem;
+}
+.foot__contact p:nth-child(3) {
+    margin-top: 1rem;
+}
+.foot__icon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.foot__icon .icon__item {
+    margin-right: 1.5rem;
+    background-color: #fff;
+    padding: 5px 12px;
+    border-radius: 40px;
+    transition: .4s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.foot__icon .icon__item:hover {
+    border-color: #E87D0E;
+    background-color: transparent;
+    color: #E87D0E;
+}
+.foot__icon .icon__item a {
+    text-decoration: none;
+}
+.foot__icon .icon__item a i {
+    color: #E87D0E;
+    font-size: 1rem;
+    width: 100%;
+}
+.copyright__bg {
+    background: #000;
+    height: auto;
+    border-top: 1px solid #fff;
+}
+.copy__con {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.copy__con h3 {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+/* ======================= Nav-Bar ========================== */
+@media screen and (max-width: 1100px) {
+    .unity {
+        left: -1rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .nav__menu {
+        position: absolute;
+        top: 6rem;
+        height: 300px;
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .4s;
+        background-color: rgb(56, 54, 52);
+        left: -100%;
+        opacity: 0;
+        z-index: 99;
+    }
+    .nav__menu li {
+        margin-bottom: 1.6rem;
+    }
+    .hamburger__menu {
+        display: inline-block;
+    }
+    .open__nav {
+        position: absolute;
+        left: 0;
+        opacity: 1;
+    }
+    .content__con {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content__right {
+        height: 400px;
+        width: 70%;
+        align-self: center;
+    }
+    .content__left {
+        text-align: center;
+        margin-left: 0;
+    }
+    .img__bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+    .lorem__con {
+        margin: 4rem 1.6rem;
+    }
+    .spider__con {
+        display: flex;
+        flex-direction: column;
+    }
+    .spider__lorem {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .spider__img {
+        margin: 0;
+    }
+    .game__header {
+        margin: 3rem 1rem;
+    }
+    .game__bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+    .game__bottom-item {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .pro__header {
+        padding: 0;
+    }
+    .pro__pic-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pro__con {
+        margin: 0 3rem;
+    }
+    .email__top {
+        text-align: center;
+    }
+    .email__flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .email__con {
+        margin-left: 0;
+    }
+    .email__item {
+        text-align: center;
+    }
+    .foot__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .foot__about {
+        margin-left: 5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .unity {
+        left: -4.5rem;
+    }
+    .eye {
+        right: -3rem;
+    }
+    .unreal {
+        left: 1rem;
+    }
+    .joy {
+        width: 80%;
+    }
+    .img__bottom {
+        grid-template-columns: 1fr;
+    }
+    .bottom__text {
+        margin-top: 1.3rem;
+    }
+    .text__top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .text__top h2 {
+        text-align: center;
+    }
+    .game__bottom {
+        grid-template-columns: 1fr;
+    }
+    .game__bottom-last {
+        grid-template-columns: 1fr;
+    }
+    .game__bottom-item:nth-child(1) {
+        margin-bottom: 0;
+    }
+    .pro__pic-top {
+        grid-template-columns: 1fr;
+    }
+    .pro__pic-item img {
+        height: 300px;
+    }
+    .pro__con {
+        margin: 0 4rem;
+    }
+    .foot__grid {
+        grid-template-columns: 1fr;
+    }
+    .foot__logo {
+        text-align: center;
+        border-bottom: 1px solid #999;
+    }
+    .foot__logo .bott__line {
+        margin-bottom: 1rem;
+    }
+    .foot__about {
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #999;
+    }
+    .foot__about ul {
+        justify-content: center;
+    }
+    .foot__about ul li:nth-child(4) {
+        margin-bottom: 1rem;
+    }
+    .foot__contact {
+        text-align: center;
+    }
+    .foot__con {
+        margin-bottom: 0;
+    }
+    .modal__content {
+        width: 100%;
+    }
+}
